@@ -1,0 +1,15 @@
+.login-background-image-1 {
+    background: url("../images/background-image-1.jpg") center center / cover no-repeat fixed;
+}
+
+.login-background-image-2 {
+    background: url("../images/background-image-2.jpg") center center / cover no-repeat fixed;
+}
+
+.login-background-image-3 {
+    background: url("../images/background-image-3.jpg") center center / cover no-repeat fixed;
+}
+
+.login-background-image-4 {
+    background: url("../images/background-image-4.jpg") center center / cover no-repeat fixed;
+}
