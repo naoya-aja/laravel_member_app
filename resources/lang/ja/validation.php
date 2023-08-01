@@ -154,6 +154,8 @@ return [
     */
 
     'attributes' => [
+        'last_name'  => '姓',
+        'first_name'  => '名',
         'name'  => '氏名',
         'email'  => 'メールアドレス',
         'password'  => 'パスワード',

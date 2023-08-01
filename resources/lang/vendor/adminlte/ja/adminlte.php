@@ -2,6 +2,8 @@
 
 return [
 
+    'last_name'                   => '姓',
+    'first_name'                  => '名',
     'full_name'                   => '氏名',
     'email'                       => 'メールアドレス',
     'password'                    => 'パスワード',
@@ -16,9 +18,9 @@ return [
     'toggle_navigation'           => 'ナビゲーションを開閉',
     'login_message'               => 'メンバーログイン',
     'register_message'            => 'アカウントを登録する',
-    'password_reset_message'      => 'パスワードをリセットする',
-    'reset_password'              => 'パスワードをリセットする',
-    'send_password_reset_link'    => 'パスワードリセットリンクを送信する。',
+    'password_reset_message'      => 'パスワード再設定メールを送る',
+    'reset_password'              => 'パスワードリセット',
+    'send_password_reset_link'    => '送信',
     'verify_message'              => 'あなたのアカウントは認証が必要です。',
     'verify_email_sent'           => 'あなたのメールアドレスに認証用のリンクを送信しました。',
     'verify_check_your_email'     => '続行する前に、認証用リンクについてメールを確認してください。',
