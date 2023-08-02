@@ -63,9 +63,9 @@ return [
     |
     */
 
-    'logo' => '',
-    'logo_img' => 'images/logo_top.png',
-    'logo_img_class' => ' img-circle elevation-3',
+    'logo' => 'ALLPATTAYA',
+    'logo_img' => 'images/blogo.png',
+    'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'Admin Logo',
@@ -107,7 +107,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => true,
+        'enabled' => false,
         'img' => [
             'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
             'alt' => 'AdminLTE Preloader Image',
@@ -210,13 +210,13 @@ return [
     |
     */
 
-    'sidebar_mini' => 'lg',
+    'sidebar_mini' => null,
     'sidebar_collapse' => false,
     'sidebar_collapse_auto_size' => false,
     'sidebar_collapse_remember' => false,
-    'sidebar_collapse_remember_no_transition' => true,
+    'sidebar_collapse_remember_no_transition' => false,
     'sidebar_scrollbar_theme' => 'os-theme-light',
-    'sidebar_scrollbar_auto_hide' => 'l',
+    'sidebar_scrollbar_auto_hide' => 'n',
     'sidebar_nav_accordion' => true,
     'sidebar_nav_animation_speed' => 300,
 
@@ -253,7 +253,8 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    // 'dashboard_url' => 'home',
+    'dashboard_url' => 'adminlte',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -294,95 +295,101 @@ return [
         [
             'type'         => 'navbar-search',
             'text'         => 'search',
-            'topnav_right' => true,
+            'topnav_right' => false,
         ],
         [
             'type'         => 'fullscreen-widget',
-            'topnav_right' => true,
+            'topnav_right' => false,
         ],
 
         // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
+        // [
+        //     'type' => 'sidebar-menu-search',
+        //     'text' => 'search',
+        // ],
+        // [
+        //     'text' => 'blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
+        // [
+        //     'text'        => 'pages',
+        //     'url'         => 'admin/pages',
+        //     'icon'        => 'far fa-fw fa-file',
+        //     'label'       => 4,
+        //     'label_color' => 'success',
+        // ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
-            'url'  => 'admin/settings',
+            'url'  => 'profile',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'url'  => 'password',
             'icon' => 'fas fa-fw fa-lock',
         ],
+        ['header' => 'pages'],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'オールパタヤトップ',
+            'url'  => 'https://all-pattaya.com/',
+            'icon' => 'fas fa-fw fa-home',
         ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+    //     [
+    //         'text'    => 'multilevel',
+    //         'icon'    => 'fas fa-fw fa-share',
+    //         'submenu' => [
+    //             [
+    //                 'text' => 'level_one',
+    //                 'url'  => '#',
+    //             ],
+    //             [
+    //                 'text'    => 'level_one',
+    //                 'url'     => '#',
+    //                 'submenu' => [
+    //                     [
+    //                         'text' => 'level_two',
+    //                         'url'  => '#',
+    //                     ],
+    //                     [
+    //                         'text'    => 'level_two',
+    //                         'url'     => '#',
+    //                         'submenu' => [
+    //                             [
+    //                                 'text' => 'level_three',
+    //                                 'url'  => '#',
+    //                             ],
+    //                             [
+    //                                 'text' => 'level_three',
+    //                                 'url'  => '#',
+    //                             ],
+    //                         ],
+    //                     ],
+    //                 ],
+    //             ],
+    //             [
+    //                 'text' => 'level_one',
+    //                 'url'  => '#',
+    //             ],
+    //         ],
+    //     ],
+    //     ['header' => 'labels'],
+    //     [
+    //         'text'       => 'important',
+    //         'icon_color' => 'red',
+    //         'url'        => '#',
+    //     ],
+    //     [
+    //         'text'       => 'warning',
+    //         'icon_color' => 'yellow',
+    //         'url'        => '#',
+    //     ],
+    //     [
+    //         'text'       => 'information',
+    //         'icon_color' => 'cyan',
+    //         'url'        => '#',
+    //     ],
     ],
 
     /*
@@ -516,7 +523,7 @@ return [
             'close_all_other' => true,
             'scroll_left' => true,
             'scroll_right' => true,
-            'fullscreen' => true,
+            'fullscreen' => false,
         ],
         'options' => [
             'loading_screen' => 1000,

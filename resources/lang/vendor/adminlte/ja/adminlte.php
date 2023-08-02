@@ -2,6 +2,7 @@
 
 return [
 
+    'name'                        => '氏名',
     'last_name'                   => '姓',
     'first_name'                  => '名',
     'full_name'                   => '氏名',
