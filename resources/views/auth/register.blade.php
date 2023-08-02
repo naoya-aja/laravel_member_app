@@ -38,7 +38,7 @@
         {{-- First Name field --}}
         <div class="input-group mb-3">
             <input type="text" name="first_name" class="form-control @error('first_name') is-invalid @enderror"
-                   value="{{ old('first_name') }}" placeholder="{{ __('adminlte::adminlte.first_name') }}" autofocus>
+                   value="{{ old('first_name') }}" placeholder="{{ __('adminlte::adminlte.first_name') }}">
 
             <div class="input-group-append">
                 <div class="input-group-text">
