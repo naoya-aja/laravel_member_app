@@ -332,8 +332,8 @@ return [
         ],
         ['header' => 'pages'],
         [
-            'text' => 'オールパタヤトップ',
-            'url'  => 'https://all-pattaya.com/',
+            'text' => 'Yahoo!',
+            'url'  => 'https://www.yahoo.co.jp/',
             'icon' => 'fas fa-fw fa-home',
         ],
     //     [
